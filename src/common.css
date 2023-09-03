@@ -1,0 +1,152 @@
+/* common.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .navbar{
+    margin: 0;
+    display: flex;
+    height : 55px; 
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+  } 
+  .navbar h2{
+    color : white
+  }
+  .navbar a{
+    color: tomato;
+    text-decoration: none;
+  }
+  .navbar .active{
+    color: white;
+  }
+  .navbar #home{
+    margin-left: 800px;
+  }
+  .navbar #history{
+    margin-right: 50px;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+   
+  
+  /* Page-specific styles */
+  
+  /* Home Page */
+  .home {
+    padding: 20px;
+    margin : 2px 0 0 0;
+    background-color:rgb(224, 222, 222);
+  }
+  
+  .home h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .search-results{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  /* History Page */
+  .history {
+    padding: 20px;
+    border-radius: 20px;
+    background-color:aliceblue;
+  }
+  
+  .history h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Word Details Page */
+  .word-page {
+    padding: 20px;
+    margin : 2px 0 0 0;
+    background-color:rgb(224, 222, 222);
+  }
+  .word-details{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  /* Loader */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loader img {
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
